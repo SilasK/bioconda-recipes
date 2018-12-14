@@ -16,7 +16,7 @@ build:
 
 requirements:
   build:
-
+    - {{ compiler('c') }}
   run:
     - perl >=5
 
@@ -30,5 +30,4 @@ test:
 about:
   home: https://bitbucket.org/berkeleylab/metabat
   license: Academic and Research License
-  license_file: license.txt
   summary: "MetaBAT2 is a program for binning metagenome-assembled contigs into bins/MAGs."

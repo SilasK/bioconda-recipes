@@ -1,5 +1,10 @@
 mkdir -p $PREFIX/bin/
 
+if [[ $OSTYPE == darwin* ]]; then
+  cd metabat
+fi
+
+
 cp aggregateBinDepths.pl $PREFIX/bin/
 cp aggregateContigOverlapsByBin.pl $PREFIX/bin/
 cp contigOverlaps $PREFIX/bin/
